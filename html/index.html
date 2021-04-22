@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catalogue</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/signIn.css">
+</head>
+
+<body>
+    <h2>Buttons</h2>
+    <button class="button btn--filled" theme="filled">Filled</button> <!-- class="container_button" -->
+    <button class="button btn--outlined" theme="outlined">Outlined</button>
+    <button class="button btn--textOnly" theme="textOnly">textOnly</button>
+    <button class="button" theme="disabled">disabled</button>
+
+    <h2>Inputs</h2>
+    <div class="form__field">
+        <label class="form__label" for="Filled">Filled</label>
+        <input id="Filled" class="form__input">
+    </div>
+    <div class="form__field">
+        <label class="form__label" for="Outlined">Outlined</label>
+        <input id="Outlined" class="form__input" theme="outlined">
+    </div>
+    <div class="form__field">
+        <label class="form__label" for="disabled" theme="disabled">Disabled</label>
+        <input id="disabled" class="form__input" theme="disabled" disabled> 
+    </div>
+</body>

@@ -1,0 +1,161 @@
+body {
+    background-color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Buttons */
+.button {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.5;
+}
+
+
+/* Forms */
+.form__field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    outline: none;
+}
+
+.form__input {
+    background: #F6F6F6;
+    border: 2px solid #F6F6F6;
+    font-family: 'Mulish', sans-serif;
+    height: 46px;
+    border-radius: 8px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.form__input:focus, .form__input:hover {
+    border: 2px solid #794DC1;
+}
+
+/* Labels */
+.form__field {
+    font-size: 12px;
+}
+
+.form__link {
+    font-size: 11px;
+    color: #794DC1;
+    text-decoration: none;
+}
+
+/* Themes */
+.button[theme="filled"] {
+    background-color: #794DC1;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid #794DC1;
+}
+
+.button[theme="outlined"] {
+    background-color: transparent;
+    color: #794DC1;
+    border-radius: 30px;
+    border: 2px solid #794DC1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button[theme="textOnly"] {
+    background-color: transparent;
+    color: #794DC1;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button[theme="disabled"] {
+    background-color: #794DC1;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+ 
+.form__input[theme="outlined"] {
+    background: transparent;
+    border-color: #F6F6F6;
+}
+
+.form__input[theme="disabled"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+/* MODIFIERS */
+
+/* outlined */
+.btn--outlined {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.btn--outlined:hover {
+    background: #794DC1 radial-gradient(circle, transparent 1%, #794DC1 1%) center/15000%;
+    border: 2px solid #794DC1;
+    color: #fff;
+}
+
+.btn--outlined:active {
+    background-color: #956ed3;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/* filled */
+.btn--filled {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.btn--filled:hover {
+    background: #56348d radial-gradient(circle, transparent 1%, #56348d 1%) center/15000%;
+    border: 2px solid #56348d;
+}
+
+.btn--filled:active {
+    background-color: #956ed3;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/* textOnly */
+.btn--textOnly {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.btn--textOnly:hover {
+    background: transparent radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
+    border: 2px solid transparent;
+}
+
+.btn--textOnly:active {
+    background-color: #956ed3;
+    background-size: 100%;
+    transition: background 0s;
+}
